@@ -1,0 +1,137 @@
+body, *, :root {
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #222222;
+    color : #AAAAAA;
+}
+body {
+    background-color: #222222;
+}
+.form {
+    position: absolute;
+    margin : auto;
+    right : 0;
+    left : 0;
+    top : 0;
+    height : 100vh;
+    width :50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.name {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form label {
+    color : #0A81AB;
+    font-weight: lighter;
+    font-size : 1.5rem;
+}
+
+input {
+    border : none;
+    border-bottom : 2px solid grey;
+    outline : none;
+    font-size: 2.5rem;
+    color : grey;
+}
+
+input:focus{
+    border-color : #0A81Ab;
+}
+button {
+    width : 200px;
+    margin : 0 auto;
+    border : 0;
+    font-size : 2.5rem;
+    background-color : #0A81AB;
+    color : #ffffdd;
+    padding: 20px;
+    border-radius : 5px;
+    border : 1px solid #0A81AB;
+}
+ul label {
+    display: block;
+    user-select: none;
+    position: relative;
+    right : -30px;
+}
+
+button:hover{
+    color: #0A81AB;
+    background-color: #222222;
+}
+.container {
+    color : #AAAAAA;
+    font-size : 2.5rem;
+    width: 50%;
+    margin : 100px auto;
+    padding : 100px;
+    position: relative;
+    height: 60vh;
+}
+ul, li{
+    width : 100%;
+    height : 100px;
+    padding : 20px 0;
+    list-style: none;
+    border-bottom : 1px solid #333;
+    position: relative;
+}
+input[type='radio'] {
+    position: absolute;
+    visibility: hidden;
+}
+    
+input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+    input[type='radio']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #0A81AB;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+.next {
+    background-color: #222222;
+    position: absolute;
+    bottom : 0px;
+    right : 20px;
+    height : 20px;
+    border: none;
+
+}
+table,tr,td  {
+    padding: 20px;
+    width: 100%;
+    border : 1px solid #AAA;
+
+}
+td {
+    width : 50% !important;
+}
